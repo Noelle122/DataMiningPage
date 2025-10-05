@@ -4,13 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDF Link Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .authors {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 40px;
+        }
+        .author {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .author img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .author-name {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <h1>Noelle and Anastasiya's Webpage</h1>
     <p>
         Click the link below to view the report PDF:
     </p>
-    <a href="Proposal.pdf" target="_blank">View PDF</a>
+    <a href="Project.pdf" target="_blank">View PDF</a>
 
+    <h2>Authors</h2>
+    <div class="authors">
+        <div class="author">
+            <img src="Noelle.jpeg" alt="Noelle Hartman">
+            <div class="author-name">Noelle Hartman</div>
+        </div>
+        <div class="author">
+            <img src="Anastasiya.jpeg" alt="Anastasatiya Dmytryk">
+            <div class="author-name">Anastasatiya Dmytryk</div>
+        </div>
+    </div>
+    <div class="project">
+        <h2>About the Project</h2>
+        <p>
+            This project focuses on analyzing the relationship between global raw cotton prices and the prices of textiles. 
+            The goal is to understand how fluctuations in cotton commodity prices impact textile production costs and 
+            consumer pricing. Using machine learning and statistical analysis, the study explores patterns in cotton 
+            price volatility, investigates key factors influencing these fluctuations, and develops predictive models 
+            to forecast future cotton prices. Insights from this research aim to support textile manufacturers and 
+            related industries in making informed decisions regarding production and pricing strategies.
+        </p>
+    </div>
 </body>
 </html>
