@@ -30,6 +30,30 @@
         .author-name {
             font-weight: bold;
         }
+        .project-images {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .project-image {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .project-image img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .image-caption {
+            font-style: italic;
+            font-size: 14px;
+            color: #555;
+        }
     </style>
 </head>
 <body>
@@ -50,6 +74,7 @@
             <div class="author-name">Anastasiya Dmytryk</div>
         </div>
     </div>
+
     <div class="project">
         <h2>About the Project</h2>
         <p>
@@ -61,5 +86,22 @@
             related industries in making informed decisions regarding production and pricing strategies.
         </p>
     </div>
+
+    <h2>Project Images</h2>
+    <div class="project-images">
+        <div class="project-image">
+            <img src="image1.jpg" alt="Dummy Image 1">
+            <div class="image-caption">Caption for Image 1</div>
+        </div>
+        <div class="project-image">
+            <img src="image2.jpg" alt="Dummy Image 2">
+            <div class="image-caption">Caption for Image 2</div>
+        </div>
+        <div class="project-image">
+            <img src="image3.jpg" alt="Dummy Image 3">
+            <div class="image-caption">Caption for Image 3</div>
+        </div>
+    </div>
 </body>
 </html>
+
