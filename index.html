@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDF Link Page</title>
     
-    <style>
+   <style>
     body {
         font-family: Arial, sans-serif;
         text-align: center;
@@ -36,6 +36,7 @@
         justify-content: center;
         gap: 30px;
         margin-top: 40px;
+        flex-wrap: wrap; /* ensures images wrap on smaller screens */
     }
     .project-image {
         display: flex;
@@ -43,9 +44,9 @@
         align-items: center;
     }
     .project-image img {
-        width: 300px;   /* increased size */
-        height: 225px;  /* increased size */
-        object-fit: cover;
+        width: 300px;      /* desired width */
+        height: auto;      /* maintain aspect ratio */
+        object-fit: contain; /* prevents cropping */
         margin-bottom: 8px;
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -56,6 +57,7 @@
         color: #555;
     }
 </style>
+
 
 </head>
 <body>
